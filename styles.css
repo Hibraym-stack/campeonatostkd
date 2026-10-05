@@ -1,0 +1,73 @@
+/* styles.css */
+/* Estilo premium inspirado en el prototipo de Figma */
+/* Fuente Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --primary-bg: #1a1a2e; /* fondo oscuro */
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --accent: #ff6b6b; /* color de acento */
+  --text-color: #f0f0f0;
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: var(--primary-bg);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  max-width: 360px;
+  width: 100%;
+}
+
+.login-card h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #4285F4; /* color oficial de Google */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.login-btn:hover {
+  background: #357ae8;
+  transform: translateY(-2px);
+}
+
+.login-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem 2rem;
+  }
+}
